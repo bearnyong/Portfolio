@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+/* 데스크톱 */
+body {
+    background-color: antiquewhite;
+}
+
+/* 전체 화면 비율 */
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    /* 부드러운 스크롤 */
+    scroll-behavior: smooth;
+}
+
+.menubar {
+    background-color: #D8E6C290;
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 17%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainpage section {
+    padding-top: 17%;
+}
+
+.nav-menu {
+    margin-right: 50px;
+}
+
+/* navbar menu a태그 밑줄 제거 */
+.nav-menu a {
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+/* navbar 마우스 hover 효과 */
+.nav-menu a:hover {
+    cursor: pointer;
+    color: #a5be82;
+    font-size: 120%;
+    transition: 0.8s;
+}
+
+/* navbar */
+.logo-image {
+    width: 80px;
+    height: 80px;
+    margin-left: 50px;
+}
+
+
+
+/* **************************************************
+00. 반응형 웹
+- 데스크톱
+- 테블릿(가로, 세로)
+- 스마트폰(가로, 세로)
+
+- 데스크톱 완성 후 navbar 조절해주기 ****************/
+
+/* 테블릿 세로 */
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        background-color: rgb(77, 77, 94);
+    }
+}
+
+/* 테블릿 가로 */
+@media (min-width: 992px) and (max-width: 1199px) {
+    body {
+        background-color: rgb(160, 160, 218);
+    }
+}
+
+/* 스마트폰 세로*/
+@media screen and (max-width: 320px) {
+    body {
+        background-color: aquamarine;
+    }
+}
+
+/* 스마트폰 가로*/
+@media screen and (max-width: 320px) {
+    body {
+        background-color: aquamarine;
+    }
+}

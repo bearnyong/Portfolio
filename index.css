@@ -2,7 +2,7 @@
 
 /* 데스크톱 */
 body {
-    background-color: antiquewhite;
+    background-color: #F1F6E7;
 }
 
 /* 전체 화면 비율 */
@@ -17,7 +17,7 @@ html {
 }
 
 .menubar {
-    background-color: #D8E6C290;
+    background-color: #F1F6E7;
     position: fixed;
     display: block;
     width: 100%;
@@ -27,8 +27,8 @@ html {
     align-items: center;
 }
 
-.mainpage section {
-    padding-top: 17%;
+section {
+    padding-top: 120px;
 }
 
 .nav-menu {
@@ -38,16 +38,18 @@ html {
 /* navbar menu a태그 밑줄 제거 */
 .nav-menu a {
     text-decoration: none;
-    color: black;
+    color: #748E4B;
     margin-right: 50px;
     font-size: 20px;
+    font-weight: bold;
 }
 
 /* navbar 마우스 hover 효과 */
 .nav-menu a:hover {
     cursor: pointer;
-    color: #a5be82;
-    font-size: 120%;
+    color: #576F30;
+    font-weight: bold;
+    font-size: 150%;
     transition: 0.8s;
 }
 

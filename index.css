@@ -1,8 +1,14 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: 'Ghanachocolate';
+    src: url('./common/Ghanachocolate.otf');
+    font-weight: lighter;
+}
+
 /* 데스크톱 */
 body {
-    background-color: #F1F6E7;
+    background-color: #E6F1E6;
 }
 
 /* 전체 화면 비율 */
@@ -17,7 +23,7 @@ html {
 }
 
 .menubar {
-    background-color: #F1F6E7;
+    background-color: #E6F1E6;
     position: fixed;
     display: block;
     width: 100%;
@@ -38,7 +44,7 @@ section {
 /* navbar menu a태그 밑줄 제거 */
 .nav-menu a {
     text-decoration: none;
-    color: #748E4B;
+    color: #477C47;
     margin-right: 50px;
     font-size: 20px;
     font-weight: bold;
@@ -47,10 +53,13 @@ section {
 /* navbar 마우스 hover 효과 */
 .nav-menu a:hover {
     cursor: pointer;
-    color: #576F30;
+    color: #F0F4F0;
     font-weight: bold;
     font-size: 150%;
     transition: 0.8s;
+    -webkit-text-stroke-width: 0.7px;
+    -webkit-text-stroke-color: #477C47;
+    /* text-shadow:3px 3px 3px #477C47; */
 }
 
 /* navbar */
@@ -60,40 +69,155 @@ section {
     margin-left: 50px;
 }
 
+.nav-title {
+    font-family: 'Ghanachocolate';
+    font-size: 60px;
+    color: #72A772;
+    margin-bottom: 50px;
+}
+
+/* 
+Main */
+#main {
+    width: 100%;
+    height: 100%;
+}
+
+#main p {
+    margin-top: 90px;
+    color: #5A915A;
+    font-family: 'Ghanachocolate';
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#main span {
+    color: #204F20;
+    font-family: 'Ghanachocolate';
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 50px;
+}
+
+.main-intro-flex {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.main-intro-flex div {
+    font-size: 25px;
+    width: 100px;
+    height: 50px;
+    background-color: #88BA88;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 10px 0 10px;
+}
+
+/* 
+About */
+
+#about {
+    margin: 50px 50px 50px 50px;
+}
+
+.about-intro {
+    width: 680px;
+    height: 360px;
+    background-color: #FFFFFF50;
+    border-radius: 50px;
+}
+
+.about-intro-board {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.about-intro-board div {
+    margin-left: 40px;
+}
+
+.about-intro-flex {
+    width: 230px;
+    height: 75px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: 45px;
+}
+
+.about-intro-flex img {
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+}
+
+.about-intro-flex p {
+    margin-bottom: 5px;
+    font-size: 16.5px;
+    font-weight: bold;
+    color: #C5E2C5;
+}
+
+.about-intro-con  {
+    margin-top: 5px;
+    width: 215px;
+    height: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #204F20;
+}
+
+/* 
+Skill */
+
+#skill {
+    background-color: #F0F4F0;
+}
+
+/* 
+Project */
+
+#project {
+    background-color: #F0F4F0;
+}
 
 
-/* **************************************************
-00. 반응형 웹
-- 데스크톱
-- 테블릿(가로, 세로)
-- 스마트폰(가로, 세로)
 
-- 데스크톱 완성 후 navbar 조절해주기 ****************/
 
-/* 테블릿 세로 */
-@media (min-width: 768px) and (max-width: 991px) {
+/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/
+@media all and (min-width:1024px) and (max-width:1279px) {
     body {
-        background-color: rgb(77, 77, 94);
+        background-color: #ceb382;
     }
 }
 
-/* 테블릿 가로 */
-@media (min-width: 992px) and (max-width: 1199px) {
+/* 테블릿 가로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
     body {
-        background-color: rgb(160, 160, 218);
+        background-color: #c2d18b;
     }
 }
 
-/* 스마트폰 세로*/
-@media screen and (max-width: 320px) {
+/* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/
+@media all and (min-width:480px) and (max-width:767px) {
     body {
-        background-color: aquamarine;
+        background-color: #95bddd;
     }
 }
 
-/* 스마트폰 가로*/
-@media screen and (max-width: 320px) {
+/* 모바일 세로 (해상도 ~ 479px)*/
+@media all and (max-width:479px) {
     body {
-        background-color: aquamarine;
+        background-color: #9b92cf;
     }
 }

@@ -8,7 +8,7 @@
 
 /* 데스크톱 */
 body {
-    background-color: #E6F1E6;
+    background-color: #F3F2ED;
 }
 
 /* 전체 화면 비율 */
@@ -17,179 +17,96 @@ body {
     height: 100%;
 }
 
+/* 부드러운 스크롤 */
 html {
-    /* 부드러운 스크롤 */
     scroll-behavior: smooth;
 }
 
-.menubar {
-    background-color: #E6F1E6;
+/* 메인 구역 (+7%씩 공백) */
+main {
+    padding: 5% 12% 5% 27%;
+}
+
+/* 프로필바 */
+aside {
+    position: fixed;
+    float: left;
+    width: 20%;
+    height: 92%;
+    border-radius: 3.125rem;
+    background-color: #DDDFD1;
+    top: 4%;
+    left: 2%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile-img {
+    width: 12.5rem;
+    height: 12.5rem;
+    margin-top: 4.375rem;
+}
+
+aside h3 {
+    margin-top: 0.938rem;
+    font-size: 1.375rem;
+    font-weight: bold;
+    color: #2A412A;
+}
+
+aside h4 {
+    margin-top: 0.313rem;
+    font-size: 1rem;
+    color: #2A412A;
+}
+
+/* 프로필바 contact */
+aside div {
+    margin-top: 1.875rem;
+    display: flex;
+    justify-content: center;
+}
+
+aside div img {
+    width: 3.75rem;
+    height: 3.75rem;
+}
+
+/* 페이지 타이틀 */
+.page-title {
+    font-family: 'Ghanachocolate';
+    font-size: 50px;
+    color: #B7B9A2;
+}
+
+/* 메뉴바 */
+nav {
+    width: 5%;
+    height: 18.75rem;
+    background-color: #DDDFD1;
+    border-radius: 3.125rem;
     position: fixed;
     display: block;
-    width: 100%;
-    height: 17%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-section {
-    padding-top: 120px;
-}
-
-.nav-menu {
-    margin-right: 50px;
-}
-
-/* navbar menu a태그 밑줄 제거 */
-.nav-menu a {
-    text-decoration: none;
-    color: #477C47;
-    margin-right: 50px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-/* navbar 마우스 hover 효과 */
-.nav-menu a:hover {
-    cursor: pointer;
-    color: #F0F4F0;
-    font-weight: bold;
-    font-size: 150%;
-    transition: 0.8s;
-    -webkit-text-stroke-width: 0.7px;
-    -webkit-text-stroke-color: #477C47;
-    /* text-shadow:3px 3px 3px #477C47; */
-}
-
-/* navbar */
-.logo-image {
-    width: 80px;
-    height: 80px;
-    margin-left: 50px;
-}
-
-.nav-title {
-    font-family: 'Ghanachocolate';
-    font-size: 60px;
-    color: #72A772;
-    margin-bottom: 50px;
-}
-
-/* 
-Main */
-#main {
-    width: 100%;
-    height: 100%;
-}
-
-#main p {
-    margin-top: 90px;
-    color: #5A915A;
-    font-family: 'Ghanachocolate';
-    font-size: 27px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-#main span {
-    color: #204F20;
-    font-family: 'Ghanachocolate';
-    font-size: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    line-height: 100px;
-    margin-bottom: 50px;
+    top: 4%;
+    right: 2%;
 }
 
-.main-intro-flex {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
+nav img {
+    width: 4.063rem;
+    height: 4.063rem;
 }
 
-.main-intro-flex div {
-    font-size: 25px;
-    width: 100px;
-    height: 50px;
-    background-color: #88BA88;
-    border-radius: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    margin: 0 10px 0 10px;
+nav img:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 #2A412A);
 }
 
-/* 
-About */
 
-#about {
-    margin: 50px 50px 50px 50px;
-}
 
-.about-intro {
-    width: 680px;
-    height: 360px;
-    background-color: #FFFFFF50;
-    border-radius: 50px;
-}
-
-.about-intro-board {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.about-intro-board div {
-    margin-left: 40px;
-}
-
-.about-intro-flex {
-    width: 230px;
-    height: 75px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    margin-top: 45px;
-}
-
-.about-intro-flex img {
-    width: 70px;
-    height: 70px;
-    margin-right: 10px;
-}
-
-.about-intro-flex p {
-    margin-bottom: 5px;
-    font-size: 16.5px;
-    font-weight: bold;
-    color: #C5E2C5;
-}
-
-.about-intro-con  {
-    margin-top: 5px;
-    width: 215px;
-    height: 35px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #204F20;
-}
-
-/* 
-Skill */
-
-#skill {
-    background-color: #F0F4F0;
-}
-
-/* 
-Project */
-
-#project {
-    background-color: #F0F4F0;
-}
 
 
 /* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/

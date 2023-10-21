@@ -15,83 +15,44 @@
 <body>
     <!-- 전체를 감싸는 태그 -->
     <div class="container">
-        <!-- 네비게이션 -->
-        <nav class="menubar">
-            <a href="#main"><img class="logo-image" src="./images/logo.png" /></a>
-            <div class="nav-menu">
-                <a href="#about">about</a>
-                <a href="#skill">skill</a>
-                <a href="#project">project</a>
-                <a href="#contact">contact</a>
+        <!-- 프로필 -->
+        <aside>
+            <object>
+                <img class="profile-img" src="./images/profile/profile.png" />
+                <h3>고민영</h3>
+                <h4>Ko, Min-young</h4>
+                <div>
+                    <img src="./images/profile/github.png" />
+                    <img src="./images/profile/kakaotalk.png" />
+                    <img src="./images/profile/mail.png" />
+                </div>
+            </object>
+        </aside>
+        <!-- 메뉴바 -->
+        <nav>
+            <div>
+                <a href="#main"><img src="./images/menubar/home.png" /></a>
+                <a href="#about"><img src="./images/menubar/about.png" /></a>
+                <a href="#skill"><img src="./images/menubar/skill.png" /></a>
+                <a href="#project"><img src="./images/menubar/project.png" /></a>
             </div>
         </nav>
         <!-- 본문 -->
-        <main class="mainpage">
+        <main>
             <!-- 01. #main -->
             <section id="main">
-                <p>Bearnyong_portfolio</p>
-                <span>안녕하세요<br>뭐시깽이 고민영입니다</span>
-                <div class="main-intro-flex">
-                    <div>#INFP</div>
-                    <div>#끈기</div>
-                    <div style="width: 150px;">#의사소통</div>
-                    <div>#열정</div>
-                </div>
             </section>
             <!-- 02. #about -->
             <section id="about">
-                <div class="nav-title">About Me</div>
-                <!-- 정보 감싸는 박스 -->
-                <div class="about-intro">
-                    <div class="about-intro-board">
-                        <!-- 이름 -->
-                        <div>
-                            <div class="about-intro-flex">
-                                <img src="./images/profile.png" />
-                                <p>Name</p>
-                            </div>
-                            <div class="about-intro-con">고민영(Ko, Min-young)</div>
-                        </div>
-                        <!-- 생년월일 -->
-                        <div>
-                            <div class="about-intro-flex">
-                                <img src="./images/birth.png" />
-                                <p>Birth</p>
-                            </div>
-                            <div class="about-intro-con">2000.02.16</div>
-                        </div>
-                    </div>
-                    <div class="about-intro-board">
-                        <!-- 이메일 -->
-                        <div>
-                            <div class="about-intro-flex">
-                                <img src="./images/email.png" />
-                                <p>Email</p>
-                            </div>
-                            <div class="about-intro-con">rhalsdud216@gmail.com</div>
-                        </div>
-                        <!-- 연락처 -->
-                        <div>
-                            <div class="about-intro-flex">
-                                <img src="./images/phone.png" />
-                                <p>Phone</p>
-                            </div>
-                            <div class="about-intro-con">010.9099.8895</div>
-                        </div>
-                    </div>
-                </div>
+                <div class="page-title">About Me</div>
             </section>
             <!-- 03. skill -->
             <section id="skill">
-                <div class="nav-title">Skill</div>
+                <div class="page-title">Skill</div>
             </section>
             <!-- 04. project -->
             <section id="project">
-                <div class="nav-title">Project</div>
-            </section>
-            <!-- 05. contact -->
-            <section id="contact">
-                <div class="nav-title">Contact</div>
+                <div class="page-title">Project</div>
             </section>
         </main>
     </div>

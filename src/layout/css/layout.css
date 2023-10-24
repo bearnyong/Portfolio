@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Ghanachocolate';
+    src: url('../../../public/common/Ghanachocolate.otf');
+    font-weight: lighter;
+}
+
+/* 메인 구역 (+7%씩 공백) */
+section {
+    padding: 5% 12% 5% 27%;
+}
+
+.page {
+    width: 100%; height: 100%;
+}
+
+body {
+    background-color: #F3F2ED;
+    overflow-x: hidden
+}
+
+/* 스크롤바 */
+body::-webkit-scrollbar {
+    width: 15px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #A1A594;
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-track {
+    background-color: #DDD7C1;
+}
+
+/* 전체 화면 비율 */
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.mainout {
+    padding: 5% 12% 5% 27%;
+}
+
+.pageTitle {
+    font-family: 'Ghanachocolate';
+    font-size: 50px;
+    color: #A1A594;
+}
+
+/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/
+@media all and (min-width:1024px) and (max-width:1279px) {
+    body {
+        background-color: #ceb382;
+    }
+}
+
+/* 테블릿 가로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+    body {
+        background-color: #c2d18b;
+    }
+}
+
+/* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/
+@media all and (min-width:480px) and (max-width:767px) {
+    body {
+        background-color: #95bddd;
+    }
+}
+
+/* 모바일 세로 (해상도 ~ 479px)*/
+@media all and (max-width:479px) {
+    body {
+        background-color: #9b92cf;
+    }
+}

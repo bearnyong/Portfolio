@@ -1,0 +1,50 @@
+.about-section {
+    /* padding: 5vw; */
+    width: calc(100% - 37vw);
+    height: calc(100vh - 10vw);
+    z-index: 0;
+    overflow: hidden;
+}
+
+.about-pageTitle {
+    font-family: 'Ghanachocolate';
+    font-size: 6vw;
+    color: #A1A594;
+}
+
+.about-intro {
+    margin: 0 auto;
+    /* width: 80%; */
+    justify-content: center;
+    gap: 2vw;
+}
+
+.about-intro hr {
+    margin-top: 2%;
+    margin-bottom: 3%;
+    border: 3px solid #A1A59450;
+}
+
+.about-me {
+    font-family: 'jejuGothic';
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.7vw;
+    color: #7B8676;
+    line-height: 2.5vw;
+}
+
+.about-comment {
+    margin-top: 15px;
+    font-size: 0.9vw;
+    color: #475347;
+    line-height: 1.4vw;
+}
+
+.sec1_bottom {
+    margin: 0 auto;
+    /* width: 80%; */
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+}

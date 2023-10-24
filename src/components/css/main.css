@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Ghanachocolate';
+    src: url('../../../public/common/Ghanachocolate.otf');
+    font-weight: lighter;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    /* height: calc(100vh - 119.15px); */
+    font-family: 'Ghanachocolate';
+    font-size: 4vw;
+    text-align: center;
+}
+
+/* 곰돌이 */
+.bearimg {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    bottom: -80px;
+
+    animation: rotate_image 6s linear infinite;
+    transform-origin: 50% 50%;
+
+    /* -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out; */
+}
+
+.bearimg:hover {
+    /* -webkit-transform: scale(1.3); */
+    transform: scale(1.3);
+}
+
+@keyframes rotate_image {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* 클릭 유도 */
+.arrow {
+    position: relative;
+}
+
+/*화살표*/
+.arrow {
+    font-size: 3vw;
+    position: absolute;
+    left: 48.5%;
+    bottom: -14%;
+    animation: motion 0.3s linear 0s infinite alternate;
+    color: #C0AC93;
+}
+        
+@keyframes motion {
+	0% {margin-bottom: 0px;}
+	100% {margin-bottom: 10px;}
+}
+
+.click-me {
+    font-size: 2vw;
+    position: relative;
+    bottom: -8.125rem;
+    color: #C0AC93;
+}
+
+/* 메인 */
+.main-board {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #475347;
+}
+
+.main-flex {
+    margin: 1.875rem 0 1.875rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.main-roller {
+    background-color: #E5E5D9;
+    border-radius: 7.5rem;
+    font-size: 3.5vw;
+    height: 7vw;
+    width: 35%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.main-roller-ani {
+    position: absolute;
+    animation: slide 5s infinite;
+}
+
+.marT20 {
+    margin-top: 50px;
+}
+
+.main-roller-ani div {
+    color: #475347;
+    margin-bottom: 5.625rem;
+}
+
+@keyframes slide {
+    0% {
+        top: 0;
+    }
+
+    40% {
+        top: -10.75rem;
+    }
+
+    80% {
+        top: -22.5rem;
+    }
+
+    98% {
+        top: 0;
+    }
+}

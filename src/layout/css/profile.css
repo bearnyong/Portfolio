@@ -1,0 +1,63 @@
+/* 프로필바 */
+aside {
+    position: fixed;
+    float: left;
+    width: 20%;
+    height: 92%;
+    border-radius: 6rem;
+    background-color: #E5E5D9 ;
+    top: 4%;
+    left: 2%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile-img {
+    width: 15.625rem;
+    height: 15.625rem;
+    margin-top: 6.25rem;
+}
+
+aside h3 {
+    margin-top: 1.875rem;
+    font-size: 1.625rem;
+    font-weight: bold;
+    color: #2A412A;
+}
+
+aside h4 {
+    margin-top: 0.625rem;
+    font-size: 1.25rem;
+    color: #2A412A;
+}
+
+/* 프로필바 contact */
+aside div {
+    margin-top: 1.875rem;
+    display: flex;
+    justify-content: center;
+}
+
+aside div img {
+    width: 4.688rem;
+    height: 4.688rem;
+    cursor: pointer;
+}
+
+aside div img:hover {
+    transition: 0.5s;
+    filter: opacity(0.3) drop-shadow(0 0 0 #F3F2ED);
+}
+
+.kakao-profile {
+    display: none;
+    position: absolute;
+    margin-top: 5rem;
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+.kakao:hover ~ .kakao-profile {
+    display: block;
+}

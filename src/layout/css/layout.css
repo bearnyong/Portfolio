@@ -48,10 +48,28 @@ body::-webkit-scrollbar-track {
     color: #A1A594;
 }
 
-/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)*/
+/* 노트북 & 테블릿 가로 (해상도 1024px ~ 1279px)
+내 아이패드*/
 @media all and (min-width:1024px) and (max-width:1279px) {
     body {
-        background-color: #ceb382;
+        background-color: #F3F2ED;
+    }
+    @keyframes slide {
+        0% {
+            top: -2rem;
+        }
+    
+        40% {
+            top: -9.75rem;
+        }
+    
+        80% {
+            top: -17.5rem;
+        }
+    
+        98% {
+            top: 0;
+        }
     }
 }
 

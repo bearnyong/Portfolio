@@ -7,7 +7,7 @@ function About() {
         <>
             <section id="about" className="about page about-section">
                 <div class="about-intro">
-                    <div className="about-pageTitle">About Me”</div>
+                    <div className="about-pageTitle">“About Me</div>
                     <div>
                         <p className="about-me">내일 더 발전할 모습을 위해<br/>
                         오늘 더 생각하는 고민영입니다 :)</p>

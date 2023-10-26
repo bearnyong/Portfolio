@@ -1,9 +1,3 @@
-@font-face {
-    font-family: 'Ghanachocolate';
-    src: url('../../../public/common/Ghanachocolate.otf');
-    font-weight: lighter;
-}
-
 header {
     width: 100%;
     height: calc(100vh - 10vw);

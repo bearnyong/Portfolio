@@ -29,7 +29,7 @@ function Main() {
                         </div>
                     </div>
                     <div className="main-marT2">Ko, Min-young!</div>
-                    <NavLink to='detail'>
+                    <NavLink to='minyoung'>
                         <img className="bearimg" src={bear} alt="click me" />
                     </NavLink>
                     {/* <div className="arrow">▴</div> */}

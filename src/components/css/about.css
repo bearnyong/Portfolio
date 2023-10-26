@@ -7,9 +7,11 @@
 }
 
 .about-pageTitle {
+    margin-top: 3vw;
     font-family: 'Ghanachocolate';
     font-size: 6vw;
     color: #A1A594;
+    text-align: right;
 }
 
 .about-intro {
@@ -20,25 +22,27 @@
 }
 
 .about-intro hr {
-    margin-top: 2%;
-    margin-bottom: 3%;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
     border: 3px solid #A1A59450;
 }
 
 .about-me {
     font-family: 'jejuGothic';
-    margin-top: 20px;
+    margin-top: 2vw;
     font-weight: bold;
     font-size: 1.7vw;
-    color: #7B8676;
+    color: #475347;
     line-height: 2.5vw;
+    text-align: right;
 }
 
 .about-comment {
-    margin-top: 15px;
-    font-size: 0.9vw;
+    margin-top: 1vw;
+    font-size: 1.1vw;
     color: #475347;
     line-height: 1.4vw;
+    text-align: right;
 }
 
 .sec1_bottom {
@@ -47,4 +51,8 @@
     justify-content: space-between;
     align-items: center;
     z-index: 20;
+}
+
+.txt-bg3 {
+    background:linear-gradient(180deg,rgba(255,255,255,0) 50%, gold 50%);
 }

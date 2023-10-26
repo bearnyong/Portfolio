@@ -14,34 +14,32 @@ aside {
 }
 
 .profile-img {
-    width: 15.625rem;
-    height: 15.625rem;
-    margin-top: 6.25rem;
+    width: 12vw;
+    margin-top: 5vw;
 }
 
 aside h3 {
-    margin-top: 1.875rem;
-    font-size: 1.625rem;
+    margin-top: 1.3vw;
+    font-size: 1.7vw;
     font-weight: bold;
     color: #2A412A;
 }
 
 aside h4 {
-    margin-top: 0.625rem;
-    font-size: 1.25rem;
+    margin-top: 0.5vw;
+    font-size: 1vw;
     color: #2A412A;
 }
 
 /* 프로필바 contact */
 aside div {
-    margin-top: 1.875rem;
+    margin-top: 1.2vw;
     display: flex;
     justify-content: center;
 }
 
 aside div img {
-    width: 4.688rem;
-    height: 4.688rem;
+    width: 4vw;
     cursor: pointer;
 }
 
@@ -53,9 +51,8 @@ aside div img:hover {
 .kakao-profile {
     display: none;
     position: absolute;
-    margin-top: 5rem;
-    width: 12.5rem;
-    height: 12.5rem;
+    margin-top: 4vw;
+    width: 13vw;
 }
 
 .kakao:hover ~ .kakao-profile {

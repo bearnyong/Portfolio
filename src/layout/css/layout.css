@@ -1,11 +1,5 @@
 @charset "utf-8";
 
-@font-face {
-    font-family: 'Ghanachocolate';
-    src: url('../../../public/common/Ghanachocolate.otf');
-    font-weight: lighter;
-}
-
 /* 메인 구역 (+7%씩 공백) */
 section {
     padding: 5% 12% 5% 27%;
@@ -53,23 +47,6 @@ body::-webkit-scrollbar-track {
 @media all and (min-width:1024px) and (max-width:1279px) {
     body {
         background-color: #F3F2ED;
-    }
-    @keyframes slide {
-        0% {
-            top: -2rem;
-        }
-    
-        40% {
-            top: -9.75rem;
-        }
-    
-        80% {
-            top: -17.5rem;
-        }
-    
-        98% {
-            top: 0;
-        }
     }
 }
 

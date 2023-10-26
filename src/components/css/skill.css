@@ -1,13 +1,5 @@
-.project-section P{
-    /* padding: 5vw; */
-    width: calc(100% - 37vw);
-    height: calc(100vh - 10vw);
-    z-index: 0;
-    overflow: hidden;
-}
-
-.skill .sec2 {
-    padding: 5vw 0;
+.skill-section {
+    padding: 4vw 0;
     width: 100%;
     height: calc(100vh - 10vw);
     align-items: end;
@@ -15,13 +7,7 @@
     transition: 0.3s;
 }
 
-.skill .sec2 h3 {
-    align-items: end;
-    padding-right: 8vw;
-    transition: 0.3s;
-}
-
-.skill .sec2 .skill_list {
+.skill-section .skill-list {
     list-style: none;
     padding: 0;
     width: 100%;
@@ -29,65 +15,64 @@
     transition: 0.3s;
 }
 
-.skill .sec2 .skill_list li {
+.skill-section .skill-list li {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 13vh;
+    height: 16vh;
     border-top: 1px solid #A1A594;
     transition: 0.3s;
 }
 
-.skill .sec2 .skill_list li:last-child {
+.skill-section .skill-list li:last-child {
     border-bottom: 1px solid #A1A594;
 }
 
-.skill .sec2 .skill_list li:hover {
+.skill-section .skill-list li:hover {
     background-color: #A1A594;
     background-attachment: cover;
     color: #fff;
     transition: 0.3s;
 }
 
-.skill .sec2 .skill_list li .hidden {
+.skill-section .skill-list li .hover-text {
     text-align: left;
     color: #fff;
     opacity: 0;
     transition: 0.6s;
 }
 
-.skill .sec2 .skill_list li:hover .hidden {
+.skill-section .skill-list li:hover .hover-text {
     opacity: 1;
 }
 
-.skill .sec2 .skill_list li:last-child {
-    padding-bottom: 0;
-}
-
-.skill .sec2 .skill_list li h4 {
-    width: 30%;
+.skill-section .skill-list li h4 {
     text-align: left;
-    font-family: var(--main-txt-font);
-    font-size: var(--font-size-40);
     font-weight: 700;
-    padding-left: 8vw;
+    padding-left: 1vw;
+    font-size: 1.5vw;
 }
 
-.skill .sec2 h3 {
-    font-family: var(--main-txt-font);
-    font-size: var(--font-size-40);
+.skill-section .skill-list li h5 {
+    text-align: left;
+    padding-left: 1vw;
+    font-size: 1vw;
+    margin-top: 0.3vw;
 }
 
-.skill .sec2 .skill_list li span {
+.skill-section .skill-list li span {
     padding-right: 8vw;
     width: calc(50% - 3vw);
 }
 
-.skill .sec2 .skill_list li span p {
+.skill-section .skill-list li span p {
     width: 100%;
-    font-size: var(--font-size-20);
-    font-family: var(--kr-txt-font);
     text-transform: uppercase;
     text-align: right;
+}
+
+.skill-flex {
+    display: flex;
+    justify-content: space-between;
 }

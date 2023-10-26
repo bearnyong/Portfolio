@@ -4,9 +4,9 @@ a {
     color: #475347;
 }
 
-nav {
+.nav-top {
     width: 5%;
-    height: 18.75rem;
+    height: 40vh;
     background-color: #DDD7C1;
     border-radius: 3.125rem;
     position: fixed;
@@ -18,17 +18,29 @@ nav {
     right: 2%;
 }
 
+.nav-bottom {
+    width: 5%;
+    height: 13vh;
+    background-color: #DDD7C1;
+    border-radius: 3.125rem;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    bottom: 4%;
+    right: 2%;
+}
+
 nav img {
-    width: 4.063rem;
-    height: 4.063rem;
-    
+    width: 4.3vw;
 }
 
 nav img:hover {
     transition: 0.5s;
-    filter: opacity(0.3) drop-shadow(0 0 0 #C0AC93);
+    filter: invert(50%) sepia(3%) saturate(1651%) hue-rotate(40deg) brightness(99%) contrast(50%);
 }
 
 .navActive {
-    filter: opacity(0.5) drop-shadow(0 0 0 #C0AC93);
+    filter: invert(50%) sepia(3%) saturate(1651%) hue-rotate(40deg) brightness(99%) contrast(50%);
 }

@@ -1,0 +1,7 @@
+.toegeungil-section {
+    /* padding: 5vw; */
+    width: calc(100% - 37vw);
+    height: calc(100vh - 10vw);
+    z-index: 0;
+    overflow: hidden;
+}

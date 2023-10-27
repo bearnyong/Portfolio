@@ -59,7 +59,7 @@ function Project() {
                                 <div className='project-sec1'>02.</div>
                                 <div className='project-sec2'>알고레</div>
                                 <div className='project-sec3'>요리 레시피에 따른<br />물가 정보 제공 웹사이트</div>
-                                <div className='project-sec4'>#Thymeleaf</div>
+                                <div className='project-sec4'>#공공데이터 #Thymeleaf</div>
                                 <NavLink to='algore' target="_blank">
                                     <div className='project-view'>
                                         View More →

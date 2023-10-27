@@ -17,7 +17,7 @@
 
 .skill-section .skill-list li {
     flex-wrap: wrap;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
     width: 100%;
     height: 16vh;
@@ -31,7 +31,6 @@
 
 .skill-section .skill-list li:hover {
     background-color: #A1A594;
-    background-attachment: cover;
     color: #fff;
     transition: 0.3s;
 }
@@ -41,6 +40,7 @@
     color: #fff;
     opacity: 0;
     transition: 0.6s;
+    font-size: 1.3vw;
 }
 
 .skill-section .skill-list li:hover .hover-text {
@@ -51,6 +51,7 @@
     text-align: left;
     font-weight: 700;
     padding-left: 1vw;
+    padding-top: 2vw;
     font-size: 1.5vw;
 }
 
@@ -62,8 +63,7 @@
 }
 
 .skill-section .skill-list li span {
-    padding-right: 8vw;
-    width: calc(50% - 3vw);
+    width: calc(55%);
 }
 
 .skill-section .skill-list li span p {

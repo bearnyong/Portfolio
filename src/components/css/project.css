@@ -1,6 +1,6 @@
 .project-section {
     /* padding: 5vw; */
-    width: calc(100% - 37vw);
+    width: calc(100% - 36vw);
     height: calc(100vh - 10vw);
     z-index: 0;
     overflow: hidden;
@@ -73,9 +73,16 @@
 .project-sec4 {
     margin-left: 1vw;
     margin-top: 1vw;
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     color: #C0AC93;
     font-weight: bold;
+    text-decoration: underline;
+}
+
+.project-key-flex {
+    display: flex;
+    justify-content: start;
+    gap: 1vw;
 }
 
 /* 더보기 */
@@ -92,8 +99,12 @@
     background-color: #C0AC93;
     color: #F3F2ED;
     border-radius: 50px;
+    margin-left: 0.5vw;
 }
 
+.project-view:hover {
+    background-color: #DDD7C1;
+}
 
 
 /* < */

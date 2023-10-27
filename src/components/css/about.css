@@ -1,17 +1,27 @@
 .about-section {
     /* padding: 5vw; */
-    width: calc(100% - 37vw);
+    width: calc(100% - 36vw);
     height: calc(100vh - 10vw);
     z-index: 0;
     overflow: hidden;
+    align-items: center;
+    display: block;
+}
+
+.about-board {
+    vertical-align: middle;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .about-pageTitle {
-    margin-top: 3vw;
+    /* margin-top: 3vw; */
     font-family: 'Ghanachocolate';
     font-size: 6vw;
     color: #A1A594;
-    text-align: right;
+    text-align: left;
+    margin-top: 1.5vw;
 }
 
 .about-intro {
@@ -23,36 +33,132 @@
 
 .about-intro hr {
     margin-top: 2vw;
-    margin-bottom: 3vw;
+    margin-bottom: 2vw;
     border: 3px solid #A1A59450;
 }
 
 .about-me {
     font-family: 'jejuGothic';
-    margin-top: 2vw;
+    margin-top: 1.7vw;
     font-weight: bold;
-    font-size: 1.7vw;
+    font-size: 2vw;
     color: #475347;
     line-height: 2.5vw;
-    text-align: right;
+    text-align: left;
+    margin-left: 1vw;
 }
 
 .about-comment {
-    margin-top: 1vw;
-    font-size: 1.1vw;
-    color: #475347;
-    line-height: 1.4vw;
-    text-align: right;
+    margin-left: 1vw;
+    margin-top: 0.7vw;
+    font-size: 1.2vw;
+    color: #7B8676;
+    line-height: 1.5vw;
+    text-align: left;
 }
 
 .sec1_bottom {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     /* width: 80%; */
-    justify-content: space-between;
-    align-items: center;
-    z-index: 20;
+    /* justify-content: space-between; */
+    /* align-items: end; */
+    /* z-index: 20; */
+    text-align: right;
 }
 
-.txt-bg3 {
-    background:linear-gradient(180deg,rgba(255,255,255,0) 50%, gold 50%);
+.sec1_bottom div {
+    display: flex;
+    justify-content: end;
+    font-size: 1.7vw;
+    margin-top: 0.5vw;
+    gap: 0.3vw;
+    margin-right: 0.5vw;
+}
+
+.sec1_bottom h2 {
+    font-family: 'Ghanachocolate';
+    font-size: 1.5vw;
+    color: #A1A594;
+    font-weight: 500;
+    margin-bottom: 1.5vw;
+}
+
+.sec1_bottom h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 3.5px solid #DDD7C1;
+    border-radius: 3rem;
+    height: 7vh;
+    font-family: 'jejuGothic';
+    background-color: #FFFFFF20;
+
+    color: #C0AC93;
+    width: 14vw;
+}
+
+.sec1_bottom h3:hover {
+    background-color: #DDD7C1;
+    color: #F3F2ED;
+}
+
+.sec1_bottom h4 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 3.5px solid #DDD7C1;
+    border-radius: 3rem;
+    height: 7vh;
+    font-family: 'jejuGothic';
+    background-color: #FFFFFF20;
+
+    color: #A1A594;
+    width: 11vw;
+}
+
+.sec1_bottom h4:hover {
+    background-color: #DDD7C1;
+    color: #F3F2ED;
+}
+
+.sec1_bottom h5 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 3.5px solid #DDD7C1;
+    border-radius: 3rem;
+    height: 7vh;
+    font-family: 'jejuGothic';
+    background-color: #FFFFFF20;
+
+    color: #C0AC93;
+    width: 9.2vw;
+}
+
+.sec1_bottom h5:hover {
+    background-color: #DDD7C1;
+    color: #F3F2ED;
+}
+
+.sec1_bottom h6 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 3.5px solid #DDD7C1;
+    border-radius: 3rem;
+    height: 7vh;
+    font-family: 'jejuGothic';
+    background-color: #FFFFFF20;
+
+    color: #c4bda4;
+    width: 8vw;
+}
+
+.sec1_bottom h6:hover {
+    background-color: #DDD7C1;
+    color: #F3F2ED;
 }

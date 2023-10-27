@@ -9,7 +9,6 @@ function Main() {
     return (
         <>
             <header>
-
                 <div class="main-board">
                     <div className="main-marB2">Hello!</div>
                     <div class="middle">

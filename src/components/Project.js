@@ -43,8 +43,11 @@ function Project() {
                                 <div className='project-sec1'>01.</div>
                                 <div className='project-sec2'>퇴근길</div>
                                 <div className='project-sec3'>퇴근 후, 직장인들의 취미 플랫폼</div>
-                                <div className='project-sec4'>#RestAPI #React</div>
-                                <NavLink to='toegeungil' target="_blank">
+                                <div className='project-key-flex project-sec4'>
+                                    <div>#RestAPI</div>
+                                    <div>#React</div>
+                                </div>
+                                <NavLink to='/minyoung/toegeungil' target="_blank">
                                     <div className='project-view'>
                                         View More →
                                     </div>
@@ -59,8 +62,11 @@ function Project() {
                                 <div className='project-sec1'>02.</div>
                                 <div className='project-sec2'>알고레</div>
                                 <div className='project-sec3'>요리 레시피에 따른<br />물가 정보 제공 웹사이트</div>
-                                <div className='project-sec4'>#공공데이터 #Thymeleaf</div>
-                                <NavLink to='algore' target="_blank">
+                                <div className='project-key-flex project-sec4'>
+                                    <div>#공공데이터</div>
+                                    <div>#Thymeleaf</div>
+                                </div>
+                                <NavLink to='/minyoung/algore' target="_blank">
                                     <div className='project-view'>
                                         View More →
                                     </div>
@@ -75,7 +81,11 @@ function Project() {
                                 <div className='project-sec1'>03.</div>
                                 <div className='project-sec2'>YThink</div>
                                 <div className='project-sec3'>천안시 청소년들을 위한<br />아이디어 공모전 정보 제공 웹사이트</div>
-                                <NavLink to='ythink' target="_blank">
+                                <div className='project-key-flex project-sec4'>
+                                    <div>#PHP</div>
+                                    <div>#HTML</div>
+                                </div>
+                                <NavLink to='/minyoung/ythink' target="_blank">
                                     <div className='project-view'>
                                         View More →
                                     </div>

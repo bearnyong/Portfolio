@@ -6,6 +6,7 @@ import skill from "./images/navbar/skill.png"
 import project from "./images/navbar/project.png"
 
 import "./css/navbar.css"
+import Skill from "../components/Skill";
 
 function Navbar() {
 

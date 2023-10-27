@@ -1,7 +1,7 @@
 .skill-section {
     padding: 4vw 0;
     width: 100%;
-    height: calc(100vh - 10vw);
+    /* height: calc(100vh - 10vw); */
     align-items: end;
     justify-content: space-between;
     transition: 0.3s;
@@ -40,7 +40,7 @@
     color: #fff;
     opacity: 0;
     transition: 0.6s;
-    font-size: 1.3vw;
+    font-size: 1vw;
 }
 
 .skill-section .skill-list li:hover .hover-text {

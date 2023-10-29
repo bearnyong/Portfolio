@@ -57,6 +57,7 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    margin-right: 1vw;
 }
 
 .skill-section .skill-list li:hover .hover-text {

@@ -7,7 +7,7 @@ function Skill() {
             <section id="skill" className="skill page project-section">
                 <div class="skill-section">
                     <div>
-                        <div className="skillTitle">Skill :</div>
+                        <div className="skillTitle">: Skill</div>
                         <ul class="skill-list">
                             <li className='skill-flex'>
                                 <div>

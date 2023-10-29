@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
 
-import "./css/main.css"
+import "../../css/ditail/main.css"
 
-import bear from './images/bear.png'
+import bear from '../../images/detail/bear.png'
 
 function Main() {
 

@@ -11,12 +11,12 @@ import 'swiper/css/navigation';
 // import required modules
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 
-import toegeungil from './images/toegeungil.png'
-import algore from './images/algore.png'
-import ythink from './images/ythink.png'
+import toegeungil from '../../images/detail/toegeungil.png'
+import algore from '../../images/detail/algore.png'
+import ythink from '../../images/detail/ythink.png'
 
-import "../layout/css/layout.css"
-import "./css/project.css"
+import "../../../layout/css/layout.css"
+import "../../css/ditail/project.css"
 import { Link } from 'react-router-dom';
 
 function Project() {
@@ -47,7 +47,7 @@ function Project() {
                                     <div>#RestAPI</div>
                                     <div>#React</div>
                                 </div>
-                                <NavLink to='/minyoung/toegeungil' target="_blank">
+                                <NavLink to='/project/toegeungil' target="_blank">
                                     <div className='project-view'>
                                         View More →
                                     </div>
@@ -66,7 +66,7 @@ function Project() {
                                     <div>#공공데이터</div>
                                     <div>#Thymeleaf</div>
                                 </div>
-                                <NavLink to='/minyoung/algore' target="_blank">
+                                <NavLink to='/project/algore' target="_blank">
                                     <div className='project-view'>
                                         View More →
                                     </div>
@@ -85,7 +85,7 @@ function Project() {
                                     <div>#PHP</div>
                                     <div>#HTML</div>
                                 </div>
-                                <NavLink to='/minyoung/ythink' target="_blank">
+                                <NavLink to='/project/ythink' target="_blank">
                                     <div className='project-view'>
                                         View More →
                                     </div>

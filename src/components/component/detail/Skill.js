@@ -1,4 +1,4 @@
-import './css/skill.css'
+import '../../css/ditail/skill.css'
 
 function Skill() {
 

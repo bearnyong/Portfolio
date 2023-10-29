@@ -1,10 +1,10 @@
-import profile from "./images/profile/profile.png"
-import github from "./images/profile/github.png"
-import kakaotalk from "./images/profile/kakaotalk.png"
-import kakaotalkProfile from "./images/profile/kakaotalkProfile.png"
-import mail from "./images/profile/mail.png"
+import profile from "../images/profile/profile.png"
+import github from "../images/profile/github.png"
+import kakaotalk from "../images/profile/kakaotalk.png"
+import kakaotalkProfile from "../images/profile/kakaotalkProfile.png"
+import mail from "../images/profile/mail.png"
 
-import "./css/profile.css"
+import "../css/profile.css"
 
 function Profile() {
 

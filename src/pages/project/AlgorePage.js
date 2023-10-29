@@ -1,12 +1,12 @@
-import "./css/algore.css"
+import Algore from "../../components/component/project/Algore";
 
 function AlgorePage() {
-    
-    return(
+
+    return (
         <>
-        <div className="algore-section mainout page">
-            algorePage
-        </div>
+            <div className="container">
+                <Algore />
+            </div>
         </>
     )
 }

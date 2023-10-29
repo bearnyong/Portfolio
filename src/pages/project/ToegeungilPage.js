@@ -1,12 +1,12 @@
-import "./css/toegeungil.css"
+import Toegeungil from "../../components/component/project/Toegeungil";
 
 function ToegeungilPage() {
 
     return(
         <>
-        <div className="toegeungil-section mainout page">
-        toegeungilPage
-        </div>
+        <div className="container">
+                <Toegeungil />
+            </div>
         </>
     )
 }

@@ -1,10 +1,6 @@
-import About from "../components/About";
-import Skill from "../components/Skill";
-import Project from "../components/Project";
-
-import Layout from "../layout/Layout";
-
-<script src="./common/jquery-3.7.0.min.js"></script>
+import About from "../components/component/detail/About"
+import Skill from "../components/component/detail/Skill"
+import Project from "../components/component/detail/Project"
 
 function DetailPage() {
 

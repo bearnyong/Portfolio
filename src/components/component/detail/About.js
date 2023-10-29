@@ -1,5 +1,5 @@
-import "../layout/css/layout.css"
-import "./css/about.css"
+import "../../../layout/css/layout.css"
+import "../../css/ditail/about.css"
 
 function About() {
 

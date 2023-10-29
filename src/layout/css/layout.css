@@ -10,8 +10,13 @@ section {
 }
 
 body {
-    background-color: #F3F2ED;
     overflow-x: hidden
+}
+
+/* 드래그 */
+::selection {
+    background-color: #7B8676;
+    color: #fff;
 }
 
 /* 스크롤바 */

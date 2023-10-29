@@ -1,21 +1,23 @@
 import { Outlet } from "react-router-dom";
 
-import Profile from "./Profile";
-import Navbar from "./Navbar";
+import Profile from "./components/Profile";
+import Navbar from "./components/Navbar";
+import Homebar from "./components/Homebar";
 
 import "./css/layout.css"
 
-function Layout() {
+function MainLayout() {
 
     return (
         <>
             <div className="container">
                 <Profile/>
                 <Navbar />
+                <Homebar/>
                 <Outlet/>
             </div>
         </>
     )
 }
 
-export default Layout;
+export default MainLayout;

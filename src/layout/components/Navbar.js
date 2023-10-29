@@ -1,12 +1,10 @@
 import { useLocation } from "react-router-dom";
 
-import home from "./images/navbar/home.png"
-import about from "./images/navbar/about.png"
-import skill from "./images/navbar/skill.png"
-import project from "./images/navbar/project.png"
+import about from "../images/navbar/about.png"
+import skill from "../images/navbar/skill.png"
+import project from "../images/navbar/project.png"
 
-import "./css/navbar.css"
-import Skill from "../components/Skill";
+import "../css/navbar.css"
 
 function Navbar() {
 
@@ -31,12 +29,6 @@ function Navbar() {
                             <img src={project} />
                         </a>
                     </div>
-                </div>
-                <div className="nav-bottom">
-                    {/* 00_home */}
-                    <a href='/' className={({ isActive }) => isActive ? "navActive" : ""}>
-                        <img src={home} />
-                    </a>
                 </div>
             </nav>
         </>

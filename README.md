@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# React를 활용하여 포트폴리오 만들기
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

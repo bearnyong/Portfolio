@@ -6,6 +6,7 @@
     overflow: hidden;
     align-items: center;
     display: block;
+    font-family: 'GowunDodum';
 }
 
 .about-board {
@@ -69,16 +70,16 @@
 .sec1_bottom div {
     display: flex;
     justify-content: end;
-    font-size: 1.7vw;
+    font-size: 1.5vw;
     margin-top: 0.5vw;
     gap: 0.3vw;
     margin-right: 0.5vw;
 }
 
 .sec1_bottom h2 {
-    font-family: 'Ghanachocolate';
+    font-family: 'jejuGothic';
     font-size: 1.5vw;
-    color: #A1A594;
+    color: #C0AC93;
     font-weight: 500;
     margin-bottom: 1.5vw;
 }
@@ -91,7 +92,7 @@
     border: 3.5px solid #DDD7C1;
     border-radius: 3rem;
     height: 7vh;
-    font-family: 'jejuGothic';
+    font-family: 'Ghanachocolate';
     background-color: #FFFFFF20;
 
     color: #C0AC93;
@@ -113,6 +114,7 @@
     height: 7vh;
     font-family: 'jejuGothic';
     background-color: #FFFFFF20;
+    font-family: 'Ghanachocolate';
 
     color: #A1A594;
     width: 11vw;
@@ -133,6 +135,7 @@
     height: 7vh;
     font-family: 'jejuGothic';
     background-color: #FFFFFF20;
+    font-family: 'Ghanachocolate';
 
     color: #C0AC93;
     width: 9.2vw;
@@ -153,6 +156,7 @@
     height: 7vh;
     font-family: 'jejuGothic';
     background-color: #FFFFFF20;
+    font-family: 'Ghanachocolate';
 
     color: #c4bda4;
     width: 8vw;

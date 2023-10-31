@@ -24,7 +24,7 @@ function Project() {
     return (
         <>
             <section id="project" className='page project-section'>
-                <div className="pageTitle marB">Project</div>
+                <div className="skillTitle marB">_ Project</div>
                 <div className='project-board'>
                     <Swiper
                         cssMode={true}

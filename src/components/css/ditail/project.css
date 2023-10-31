@@ -4,6 +4,7 @@
     height: calc(100vh - 10vw);
     z-index: 0;
     overflow: hidden;
+    font-family: 'GowunDodum';
 }
 
 .project-board {
@@ -97,9 +98,10 @@
     text-align: center;
     justify-content: center;
     background-color: #C0AC93;
-    color: #F3F2ED;
+    color: white;
     border-radius: 50px;
     margin-left: 0.5vw;
+    box-shadow: 0.3vw 0.3vw #DDD7C1;
 }
 
 .project-view:hover {

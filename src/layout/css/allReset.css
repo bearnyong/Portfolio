@@ -1,0 +1,130 @@
+.allreset html,
+.allreset body,
+.allreset div,
+.allreset span,
+.allreset applet,
+.allreset object,
+.allreset iframe,
+.allreset h1,
+.allreset h2,
+.allreset h3,
+.allreset h4,
+.allreset h5,
+.allreset h6,
+.allreset p,
+.allreset blockquote,
+.allreset pre,
+.allreset a,
+.allreset abbr,
+.allreset acronym,
+.allreset address,
+.allreset big,
+.allreset cite,
+.allreset code,
+.allreset del,
+.allreset dfn,
+.allreset em,
+.allreset img,
+.allreset ins,
+.allreset kbd,
+.allreset q,
+.allreset s,
+.allreset samp,
+.allreset small,
+.allreset strike,
+.allreset strong,
+.allreset sub,
+.allreset sup,
+.allreset tt,
+.allreset var,
+.allreset b,
+.allreset u,
+.allreset i,
+.allreset center,
+.allreset dl,
+.allreset dt,
+.allreset dd,
+.allreset ol,
+.allreset ul,
+.allreset li,
+.allreset fieldset,
+.allreset form,
+.allreset label,
+.allreset legend,
+.allreset table,
+.allreset caption,
+.allreset tbody,
+.allreset tfoot,
+.allreset thead,
+.allreset tr,
+.allreset th,
+.allreset td,
+.allreset article,
+.allreset aside,
+.allreset canvas,
+.allreset details,
+.allreset embed,
+.allreset figure,
+.allreset figcaption,
+.allreset footer,
+.allreset header,
+.allreset hgroup,
+.allreset menu,
+.allreset nav,
+.allreset output,
+.allreset ruby,
+.allreset section,
+.allreset summary,
+.allreset time,
+.allreset mark,
+.allreset audio,
+.allreset video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+.allreset article,
+.allreset aside,
+.allreset details,
+.allreset figcaption,
+.allreset figure,
+.allreset footer,
+.allreset header,
+.allreset hgroup,
+.allreset menu,
+.allreset nav,
+.allreset section {
+    display: block;
+}
+
+.allreset body {
+    line-height: 1;
+}
+
+.allreset ol,
+.allreset ul {
+    list-style: none;
+}
+
+.allreset blockquote,
+.allreset q {
+    quotes: none;
+}
+
+.allreset blockquote:before,
+.allreset blockquote:after,
+.allreset q:before,
+.allreset q:after {
+    content: '';
+    content: none;
+}
+
+.allreset table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}

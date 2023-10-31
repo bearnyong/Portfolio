@@ -11,6 +11,7 @@ aside {
     display: flex;
     justify-content: center;
     text-align: center;
+    
 }
 
 .profile-img {
@@ -27,8 +28,9 @@ aside h3 {
 
 aside h4 {
     margin-top: 0.5vw;
-    font-size: 1vw;
+    font-size: 1.1vw;
     color: #2A412A;
+    font-family: 'GowunDodum';
 }
 
 /* 프로필바 contact */

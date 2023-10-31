@@ -14,7 +14,7 @@ import YthinkPage from './pages/project/YthinkPage';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         {/* <ScrollToTop /> */}
         <Routes>
           <Route path='/' element={<MainPage />} />

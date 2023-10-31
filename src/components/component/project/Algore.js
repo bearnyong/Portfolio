@@ -1,7 +1,15 @@
 import "../../../layout/css/layout.css"
 
+import { NavLink } from 'react-router-dom';
+
 import "../../css/project/algore.css"
-import algoreTitle from '../../images/project/algoreTitle.png'
+import algoreTitle from '../../images/project/algore/algoreTitle.png'
+import algoreColor from '../../images/project/algore/algoreColor.png'
+import algoreERD from '../../images/project/algore/algoreERD.png'
+import algoreConfigu from '../../images/project/algore/algoreConfiguration.png'
+import algoreGit from '../../images/project/algore/algoreGit.png'
+
+import { pdfjs } from 'react-pdf';
 
 function Algore() {
 
@@ -15,15 +23,14 @@ function Algore() {
                         <div class="headertxt">
                             <div>
                                 <h1>알고레(Algore)</h1>
-                                <h2>만랩커피 반응형 웹사이트 <span>(Main page)</span></h2>
-
+                                <h2>: 요리 레시피에 따른 물가 정보 제공 웹 사이트</h2>
                                 <ul class="headertxt-ul">
-                                    <li>2023.06.08-2023.06.14</li>
-                                    <li>팀 프로젝트 (100%) </li>
+                                    <li>2023.07.06 - 2023.07.23</li>
+                                    <li>팀 프로젝트 (95%) </li>
                                 </ul>
                                 <div class="viewbtn right-flex">
-                                    <a href="../10000LAB/10000LAB.html" target="_blank">View github</a>
-                                    <a href="../10000LAB/10000LAB.html" target="_blank">presentation</a>
+                                    <a href="https://github.com/bearnyong/algore/files/13060160/algorePPT.pdf" target="_blank">Presentation</a>
+                                    <a href="https://github.com/bearnyong/algore" target="_blank">View github</a>
                                 </div>
                             </div>
                         </div>
@@ -31,168 +38,209 @@ function Algore() {
                 </div>
 
                 {/* overview */}
-                <section class="overview">
+                <div class="overview">
+                    <hr />
                     <div class="common_wrap">
-                        <h1>Overview</h1>
+                        <h1 className="line_after">Overview</h1>
                         <div class="overview_txt">
                             <ul class="overview_txt_ul" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
-                                <li class="dot">목표
-                                    <p>기존 만랩커피 사이트의 포인트 컬러를 살려 디자인하고자 하였습니다.</p><br />
-                                    <p>카페 브랜드인 만큼 기존의 딱딱한 이미지보단 <strong>귀엽고 친근한 이미지</strong>로 리디자인 하여<br /> <strong>소비자들이 더욱 부담 없이 즐길 수
-                                        있도록</strong> 웹
-                                        사이트를 제작하는 것을 목표로
-                                        삼았습니다.</p>
-                                </li>
                                 <li>작업기간
-                                    <p>2023.06.08-2023.06-14</p>
+                                    <p>2023.07.06 - 2023.07.23</p>
+                                </li>
+                                <li>역할
+                                    <a href="https://youtu.be/rDlMqXsJYo4" target="_blank" className="left-flex">
+                                        <p>키친가이드(손질법, 보관법)</p>
+                                        <div className="project-veiw">
+                                            <a href="https://youtu.be/rDlMqXsJYo4" target="_blank">▶</a>
+                                        </div>
+                                    </a>
                                 </li>
                                 <li>기여도
-                                    <p>100%</p>
+                                    <div className="project-border">95%</div>
                                 </li>
-                                <li>웹사이트 유형
-                                    <p>Mobile 우선 반응형 웹</p>
-                                    <p> -Mobile : 768px &nbsp; -Tablet: 1200px &nbsp; -PC: 1920px</p>
+                                <li class="dot">프로젝트 목표
+                                    <p><strong>물가 급등</strong>으로 인한 소비 심리 위축 속에서<br /> 요리에 경험이 없거나 숙련되지 않은 사용자들에게<br /><strong>합리적인 소비 방법</strong>을 제안하였으며,</p>
+                                    <p>사용자에게 신뢰감을 줄 수 있는 <strong>공공데이터</strong>를 활용하여<br /> <strong>정확한 물가 정보</strong>를 제공하고자 하였습니다. </p>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                </section>
+                </div>
 
                 {/* technology */}
-                <section class="technology">
+                <div class="overview">
+                    <hr />
                     <div class="common_wrap">
-                        <h1>technology</h1>
-                        <div class="technology_txt" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
-                            <p class="dot">사용 기술</p>
-                            <ul class="technology_ul1">
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                            </ul>
-                            <ul class="technology_ul2">
-                                <li>JavaScript</li>
-                                <li>jQuery</li>
+                        <h1 className="line_after2">Project<br />Skill</h1>
+                        <div class="overview_txt">
+                            <ul class="overview_txt_ul" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
+                                <li class="dot">사용 기술
+                                    <div className="project-skill">Java</div>
+                                    <p>
+                                        &nbsp;&nbsp;- Spring Framwork의 security, thymeleaf, web을 build하여 <br />
+                                        &nbsp;&nbsp;- Thymeleaf<br />
+                                        &nbsp;&nbsp;- MyBatis mapper .xml 파일을 활용하여 <br />
+                                    </p>
+                                    <div className="project-skill">Oracle</div>
+                                    <p>
+                                        &nbsp;&nbsp;- Oracle Databace를 활용하여 <br />
+                                    </p>
+                                    <div className="project-skill">JavaScript</div>
+                                    <p>
+                                        &nbsp;&nbsp;- JavaScript<br />
+                                        &nbsp;&nbsp;- Html<br />
+                                        &nbsp;&nbsp;- CSS<br />
+                                    </p>
+                                    <div className="project-skill">Tool</div>
+                                    <p>
+                                        &nbsp;&nbsp;- IntelliJ<br />
+                                        &nbsp;&nbsp;- VScode<br />
+                                    </p>
+                                    <div className="project-skill">collabo</div>
+                                    <p>
+                                        <br />
+                                        &nbsp;&nbsp;- Github<br />
+                                        &nbsp;&nbsp;- Figma<br />
+                                    </p>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                </section>
+                </div>
 
                 {/* styleguide */}
-                <section class="styleguide">
+                <div class="overview">
+                    <hr />
                     <div class="common_wrap">
-                        <h1>Style guide</h1>
-                        <div class="styleguide_txt">
-                            <ul class="styleguide_ul" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
+                        <h1 className="line_after">Style guide</h1>
+                        <div class="overview_txt">
+                            <ul class="overview_txt_ul" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
                                 <li class="dot">Concept
-                                    <p>기존 <strong>만랩커피 사이트의 포인트 컬러를 유지</strong>하면서 귀여운 느낌으로 리디자인 하였습니다. 카페 브랜드인 만큼 음료의 이미지를 크게 넣어 강조하였습니다.</p>
+                                    <p><strong>공공데이터</strong>를 사용하였기에 <strong>신뢰감</strong>을 형성해줄 수 있는 컬러인 <strong>파란색</strong>을 메인컬러로 설정하였습니다.<br /></p>
+                                    <p><strong>레시피</strong>가 중점인 웹 페이지이기에<br /><strong>이미지</strong> 위주의 메인 화면을 구상하였습니다.</p>
                                 </li>
                                 <li class="dot">Keyword
                                     <div class="keyword-wrap">
-                                        <span>#귀여운</span>
+                                        <span>#신뢰감</span>
                                         <span>#생동감</span>
                                     </div>
                                 </li>
-                                <li class="dot">Color
-                                    <img src="./images/color.png" alt="스타일 가이드 컬러 색상" />
-                                </li>
-                                <li class="dot">Typography
-                                    <div class="typo-wrap">
-                                        <div class="typo-left">
-                                            <h3>나눔스퀘어라운드(한글)</h3>
-                                            <p>가나다AaBbCc0123 Bold</p>
-                                            <p>가나다AaBbCc0123 ExtraBold </p>
-                                        </div>
-                                        <div class="typo-right">
-                                            <h3>Rubik(영문)</h3>
-                                            <p>AaBbCcDd0123 Bold</p>
-                                            <p>AaBbCcDd0123 ExtraBold</p>
-                                        </div>
-                                    </div>
+                                <li class="dot colorImg">Color
+                                    <p>
+                                        <img src={algoreColor} alt="알고레 스타일 가이드 컬러 색상" />
+                                    </p>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                </section>
+                </div>
 
                 {/* publishing */}
-                <section class="publishing">
+                <div class="overview">
+                    <hr />
                     <div class="common_wrap">
-                        <h1>Publishing</h1>
-                        <div class="publishing_txt" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
-                            <h3 class="dot">퍼블리싱</h3>
-                            <ul class="publishing_ul">
-                                <li>- flex, position을 사용한 다양한 레이아웃 구현</li>
-                                <li>- CSS3 애니메이션 속성 활용 움직이는 글씨, 이미지 구현</li>
-                                <li>- 모바일 버전 메뉴 아이콘 클릭시 드롭다운 메뉴 구현</li>
-                                <li>- 미디어 쿼리를 활용한 반응형 웹 제작</li>
-                                <li>- Swiper.js 라이브러리 활용한 슬라이드</li>
+                        <h1 className="line_after">Composition</h1>
+                        <div class="overview_txt">
+                            <ul class="overview_txt_ul pro-config" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
+                                <li class="dot">메뉴 구조도
+                                    <p><img src={algoreConfigu} /></p>
+                                    <p>[ <strong>로그인 및 마이페이지</strong> ]<br /> - Spring security를 사용하여 세션 방식의 로그인 기능 구현</p>
+                                    <p>[ <strong>레시피</strong> ]<br /> -  공공데이터를 활용하여 재료 가격과 함께 레시피를 제공</p>
+                                    <p>[ <strong>키친가이드</strong> ]<br /> - 재료를 손질하고 보관하는 방법을 관리자 권한으로 작성</p>
+                                    <br />
+                                </li>
+                                <li class="dot">ERD
+                                    <p><img src={algoreERD} /></p>
+                                    <p>[ <strong>테이블 설계</strong> ]<br /> - DA#5를 활용하여 회원과 레시피를 중심으로 한 테이블 설계</p>
+                                    <br />
+                                </li>
+                                <li class="dot">Branch 관리
+                                    <p><img src={algoreGit} /></p>
+                                    <p>[ <strong>main</strong> ]<br /> - 실제 배포를 위한 main 브랜치</p>
+                                    <p>[ <strong>develop</strong> ]<br /> - main 브랜치에 영향을 주지 않으면서 개발하기 위해서 사용</p>
+                                    <p>[ <strong>feature</strong> ]<br /> - 기능 단위로 develop 서버에 영향을 주지 않기 위해서 사용</p>
+                                </li>
                             </ul>
                         </div>
                     </div>
-                </section>
+                </div>
 
                 {/* problem & solution */}
-                <section class="problem_solution">
+                <div class="overview">
+                    <hr />
                     <div class="common_wrap">
-                        <h1>Problems<br /><span>&</span>Solution</h1>
-                        <div class="problem_solution_txt" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
-                            <h3 class="dot">문제 및 해결</h3>
-                            <ul class="problem_solution_ul">
-                                <li>1. Arrivals 섹션 음료 이미지 디자인
-                                    <p>&nbsp;&nbsp;Arrivals 섹션에 다양한 음료 이미지들을 넣어야 했는데 음료에 대한 많은 정보들도 같이 넣으려다 보니 디자인이 복잡해지는 문제가
-                                        발생했습니다.
+                        <h1 className="line_after2">Problem<br />& Solution</h1>
+                        <div class="overview_txt">
+                            <ul class="overview_txt_ul" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
+                                {/* <li class="dot">문제 및 해결 */}
+                                <li>1. youtube 링크 데이터의 활용 이슈
+                                    <p>
+                                        유튜브 링크를 삽입하여 동영상을 실행시켜주는 뭐시깽이와
+                                        Database에 동영상 링크 Colum만 설정을 해주었기 때문에
+                                        메인 사진을 설정해주지 못해 테이블을 다시 설계해 주어야 하는 문제가 생겼습니다.
                                     </p>
-                                    <p>&nbsp;&nbsp;여러 번 디자인을 다시 해보면서 <strong>음료 이미지와 각 음료에 대한 이름만 넣어주었더니 </strong>보기에도 편하고 깔끔한 디자인으로 완성시킬 수
-                                        있었습니다.
+                                    <p>
+                                        유튜브의 썸네일과 동영상 링크의 공통 요소를 찾아내어
+                                        <strong>th:src=""</strong> 타임리프 문법을 통하여
+                                        이미지와 동영상의 링크를 성공적으로 나타낼 수 있게 하였습니다.
                                     </p>
                                 </li>
-                                <li>2. 첫번째 섹션 부분 움직이는 이미지들 position 적용 오류 문제
-                                    <p>&nbsp;&nbsp;position: absolute는 절대위치로 특정 부모에 의해 절대적으로 움직인다는 것을 알고있었음에도 원하는 위치로 적용되지 않았습니다.
+                                <li>2. JavaScript(퇴근길은 이미지 서버)
+                                    <p>position: absolute는 절대위치로 특정 부모에 의해 절대적으로 움직인다는 것을 알고있었음에도 원하는 위치로 적용되지 않았습니다.
                                     </p>
-                                    <p>&nbsp;&nbsp;자식 요소들에게 div를 씌웠는데도 해결이 되지 않아서 <strong>absolute가 적용되야 할 이미지들을 묶어서 div를 씌워줬더니</strong> 해결
+                                    <p>자식 요소들에게 div를 씌웠는데도 해결이 되지 않아서 <strong>absolute가 적용되야 할 이미지들을 묶어서 div를 씌워줬더니</strong> 해결
                                         되었습니다.
                                     </p>
                                 </li>
-                                <li>3. 넘치는 텍스트 제어
-                                    <p>&nbsp;&nbsp; 데스크탑과 pc버전은 괜찮았지만 모바일의 경우 가로 폭이 좁아져서 텍스트가 넘치는 경우가 있었습니다.
+                                <li>3. 손질법- 손질 순서 부분의 다중 INSERT 이슈
+                                    <p>
+                                        손질법의 손질 순서를 차례로 작성하기 위해
+                                        PK값인 손질번호를 참조한 채로 다중 INSERT를 작성해주어야 했지만
+                                        Oracle은 다중 INSERT가 되지 않았기에 각 쿼리를 따로 작성해주어 연결해줘야 한다는 문제가 발생하였습니다.
                                     </p>
-                                    <p>&nbsp;&nbsp;이를 해결하기 위해
-                                        <strong>텍스트를 감싸는 div요소에 overflow:hidden; white-space:no-wrap; 값을 주고</strong> 넘치는 텍스트는 ···으로 표기될 수 있도록
-                                        overflow:ellipsis; 값을 주어 문제를 해결하였습니다.
+                                    <p>
+                                        시퀀스 값을 두어 .NEXTVAL로 참조키를 주고자 하였지만
+                                        무결성 제약 조건 위배로 에러가 발생하였습니다.
+                                        이를 해결하기 위해 시퀀스를 만드는 함수를 만들어 해당 함수를 계속 호출해주는 방식으로 다중 INSERT에 성공하였습니다.
                                     </p>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                </section>
+                </div>
 
                 {/* review */}
-                <section class="review">
+                <div class="overview">
+                    <hr />
                     <div class="common_wrap">
-                        <h1>Review</h1>
-                        <div class="review_txt" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
-                            <h3 class="dot">프로젝트 완료 리뷰</h3>
-                            <p> &nbsp;반응형 웹사이트를 만들어 보는 것은 처음이라 걱정 반 기대 반인 마음으로 프로젝트를 진행하였습니다.<br /> 모바일, 태블릿, 데스크탑 세 가지 유형을 모두 고려해야 했기 때문에
-                                디자인부터 퍼블리싱까지 여러 시행착오가 있었습니다. </p>
-                            <p> &nbsp;모바일 우선 반응형 웹사이트를 만들었기 때문에 모바일, 태블릿, 데스크탑 순으로 퍼블리싱을 진행하였는데, 각 디바이스 별로 코드를 수정하게 되면 다른 디바이스의 레이아웃이 영향을 받는
-                                경우가
-                                많았습니다. 이러한 문제들을 고려해서 코드를 짜고 수정하는 것이 가장 힘들었던 부분이였던 것 같습니다.</p>
-                            <p> &nbsp;그럼에도 불구하고 반응형 웹 사이트를 제작하는 것은 저에게 굉장히 흥미로운 일이였습니다. 하나의 html 구조를 기반으로 각 디바이스에 맞는 css 코드를 작성하는 게 굉장히
-                                매력적으로
-                                다가왔으며 코드를
-                                짜면서 생기는 여러 문제들을 해결하며 큰 즐거움을 느꼈습니다.
-                            </p>
-                            <p> &nbsp;앞으로도 기회가 된다면 지금까지 제작한 다른 웹사이트들도 반응형으로 제작할 계획입니다. 이번 경험을 통해 더 많은 것을 배우고 발전해나갈 수 있기를 바라며 글을 마치겠습니다 :)
-                            </p>
+                        <h1 className="line_after">Review</h1>
+                        <div class="overview_txt">
+                            <ul class="overview_txt_ul" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
+                                <li class="dot">프로젝트 완료 리뷰
+                                    <p> 반응형 웹사이트를 만들어 보는 것은 처음이라 걱정 반 기대 반인 마음으로 프로젝트를 진행하였습니다.<br /> 모바일, 태블릿, 데스크탑 세 가지 유형을 모두 고려해야 했기 때문에
+                                        디자인부터 퍼블리싱까지 여러 시행착오가 있었습니다. </p>
+                                    <p> springframework.web.servlet.ModelAndView모바일 우선 반응형 웹사이트를 만들었기 때문에 모바일, 태블릿, 데스크탑 순으로 퍼블리싱을 진행하였는데, 각 디바이스 별로 코드를 수정하게 되면 다른 디바이스의 레이아웃이 영향을 받는
+                                        경우가
+                                        많았습니다. 이러한 문제들을 고려해서 코드를 짜고 수정하는 것이 가장 힘들었던 부분이였던 것 같습니다.</p>
+                                    <p> 그럼에도 불구하고 반응형 웹 사이트를 제작하는 것은 저에게 굉장히 흥미로운 일이였습니다. 하나의 html 구조를 기반으로 각 디바이스에 맞는 css 코드를 작성하는 게 굉장히
+                                        매력적으로
+                                        다가왔으며 코드를
+                                        짜면서 생기는 여러 문제들을 해결하며 큰 즐거움을 느꼈습니다.
+                                    </p>
+                                    <p> 앞으로도 기회가 된다면 지금까지 제작한 다른 웹사이트들도 반응형으로 제작할 계획입니다. 이번 경험을 통해 더 많은 것을 배우고 발전해나갈 수 있기를 바라며 글을 마치겠습니다 :)
+                                    </p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                </section>
+                </div>
 
                 {/* 위로 가기 버튼 */}
-                <section class="arrowbtn">
+                <div class="arrowbtn">
                     <a href="#" class="btn">
                         ⇡
                     </a>
-                </section>
+                </div>
 
                 {/* footer */}
                 <footer>
@@ -202,15 +250,15 @@ function Algore() {
                                 <path
                                     d="m274-450 227 227q9 9 9 21t-9 21q-9 9-21 9t-21-9L181-459q-5-5-7-10t-2-11q0-6 2-11t7-10l278-278q9-9 21-9t21 9q9 9 9 21t-9 21L274-510h496q13 0 21.5 8.5T800-480q0 13-8.5 21.5T770-450H274Z" />
                             </svg>
-                            <a href="../index.html">
+                            <NavLink to="/minyoung#project">
                                 Back to portfolio
-                            </a>
+                            </NavLink>
                         </li>
-                        <li><a href="../10000LAB/10000LAB.html" target="_blank">View site</a></li>
+                        <li><a href="https://github.com/bearnyong/algore" target="_blank">View github</a></li>
                         <li>
-                            <a href="../project4/project4.html">
+                            <NavLink to="/project/toegeungil">
                                 Next project
-                            </a>
+                            </NavLink>
                             <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">
                                 <path
                                     d="M686-450H190q-13 0-21.5-8.5T160-480q0-13 8.5-21.5T190-510h496L459-737q-9-9-9-21t9-21q9-9 21-9t21 9l278 278q5 5 7 10t2 11q0 6-2 11t-7 10L501-181q-9 9-21 9t-21-9q-9-9-9-21t9-21l227-227Z" />

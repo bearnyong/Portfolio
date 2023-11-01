@@ -2,7 +2,7 @@ import "../../../layout/css/layout.css"
 
 import { NavLink } from 'react-router-dom';
 
-import "../../css/project/algore.css"
+import "../../css/project/project.css"
 import algoreTitle from '../../images/project/algore/algoreTitle.png'
 import algoreColor from '../../images/project/algore/algoreColor.png'
 import algoreERD from '../../images/project/algore/algoreERD.png'
@@ -23,7 +23,7 @@ function Algore() {
                         <div class="headertxt">
                             <div>
                                 <h1>알고레(Algore)</h1>
-                                <h2>: 요리 레시피에 따른 물가 정보 제공 웹 사이트</h2>
+                                <h2>: 공공데이터를 활용한 요리 레시피에 따른 물가 정보 제공 플랫폼</h2>
                                 <ul class="headertxt-ul">
                                     <li>2023.07.06 - 2023.07.23</li>
                                     <li>팀 프로젝트 (95%) </li>
@@ -175,21 +175,25 @@ function Algore() {
                                 {/* <li class="dot">문제 및 해결 */}
                                 <li>1. youtube 링크 데이터의 활용 이슈
                                     <p>
+                                        손질법&보관법 게시글 조회 부분에서 유튜브 영상 플레이어
                                         유튜브 링크를 삽입하여 동영상을 실행시켜주는 뭐시깽이와
                                         Database에 동영상 링크 Colum만 설정을 해주었기 때문에
-                                        메인 사진을 설정해주지 못해 테이블을 다시 설계해 주어야 하는 문제가 생겼습니다.
+                                        메인 사진을 설정해주지 못해 테이블 설계를 다시 해야하는 문제가 생겼습니다.
                                     </p>
                                     <p>
-                                        유튜브의 썸네일과 동영상 링크의 공통 요소를 찾아내어
-                                        <strong>th:src=""</strong> 타임리프 문법을 통하여
-                                        이미지와 동영상의 링크를 성공적으로 나타낼 수 있게 하였습니다.
+                                        유튜브의 썸네일과 동영상 링크의 공통 요소를 추출하여
+                                        해당 URL의
+                                        <strong>타임리프 문법</strong> 을 통하여
+                                        메인 이미지와 동영상 링크를 성공적으로 조회 가능하도록 하였습니다.
                                     </p>
                                 </li>
-                                <li>2. JavaScript(퇴근길은 이미지 서버)
-                                    <p>position: absolute는 절대위치로 특정 부모에 의해 절대적으로 움직인다는 것을 알고있었음에도 원하는 위치로 적용되지 않았습니다.
+                                <li>2. JavaScript node(퇴근길은 이미지 서버)
+                                    <p>
+                                        손질법과 보관법 게시글 작성 시,
+                                        JavaScript를 활용하여 해당 과정의 순서를 추가하거나 삭제하는
                                     </p>
-                                    <p>자식 요소들에게 div를 씌웠는데도 해결이 되지 않아서 <strong>absolute가 적용되야 할 이미지들을 묶어서 div를 씌워줬더니</strong> 해결
-                                        되었습니다.
+                                    <p>
+
                                     </p>
                                 </li>
                                 <li>3. 손질법- 손질 순서 부분의 다중 INSERT 이슈
@@ -216,6 +220,24 @@ function Algore() {
                         <h1 className="line_after">Review</h1>
                         <div class="overview_txt">
                             <ul class="overview_txt_ul" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
+                                <li class="dot">잘한 점
+                                    <p>
+                                        반응형 웹사이트를 만들어 보는 것은 처음이라 걱정 반 기대 반인 마음으로 프로젝트를 진행하였습니다.<br /> 모바일, 태블릿, 데스크탑 세 가지 유형을 모두 고려해야 했기 때문에
+                                        디자인부터 퍼블리싱까지 여러 시행착오가 있었습니다.
+                                    </p>
+                                </li>
+                                <li class="dot">부족한 점
+                                    <p>
+                                        반응형 웹사이트를 만들어 보는 것은 처음이라 걱정 반 기대 반인 마음으로 프로젝트를 진행하였습니다.<br /> 모바일, 태블릿, 데스크탑 세 가지 유형을 모두 고려해야 했기 때문에
+                                        디자인부터 퍼블리싱까지 여러 시행착오가 있었습니다.
+                                    </p>
+                                </li>
+                                <li class="dot">배운 점
+                                    <p>
+                                        반응형 웹사이트를 만들어 보는 것은 처음이라 걱정 반 기대 반인 마음으로 프로젝트를 진행하였습니다.<br /> 모바일, 태블릿, 데스크탑 세 가지 유형을 모두 고려해야 했기 때문에
+                                        디자인부터 퍼블리싱까지 여러 시행착오가 있었습니다.
+                                    </p>
+                                </li>
                                 <li class="dot">프로젝트 완료 리뷰
                                     <p> 반응형 웹사이트를 만들어 보는 것은 처음이라 걱정 반 기대 반인 마음으로 프로젝트를 진행하였습니다.<br /> 모바일, 태블릿, 데스크탑 세 가지 유형을 모두 고려해야 했기 때문에
                                         디자인부터 퍼블리싱까지 여러 시행착오가 있었습니다. </p>
@@ -256,7 +278,7 @@ function Algore() {
                         </li>
                         <li><a href="https://github.com/bearnyong/algore" target="_blank">View github</a></li>
                         <li>
-                            <NavLink to="/project/toegeungil">
+                            <NavLink to="/project/ythink">
                                 Next project
                             </NavLink>
                             <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">

@@ -17,15 +17,15 @@ function Navbar() {
                 <div className="nav-top">
                     <div>
                         {/* 01_about */}
-                        <a href='/minyoung#about' className={(location.hash)=="#about" ? "navActive" : ""}>
+                        <a href='/Portfolio/minyoung#about' className={(location.hash)=="#about" ? "navActive" : ""}>
                             <img src={about} />
                         </a>
                         {/* 02_skill */}
-                        <a href='/minyoung#skill' className={(location.hash)=="#skill" ? "navActive" : ""}>
+                        <a href='/Portfolio/minyoung#skill' className={(location.hash)=="#skill" ? "navActive" : ""}>
                             <img src={skill} />
                         </a>
                         {/* 03_project */}
-                        <a href='/minyoung#project' className={(location.hash)=="#project" ? "navActive" : ""}>
+                        <a href='/Portfolio/minyoung#project' className={(location.hash)=="#project" ? "navActive" : ""}>
                             <img src={project} />
                         </a>
                     </div>

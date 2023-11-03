@@ -14,7 +14,7 @@ function Homebar() {
             <nav>
                 <div className="nav-bottom">
                     {/* 00_home */}
-                    <a href='/' className={({ isActive }) => isActive ? "navActive" : ""}>
+                    <a href='/Portfolio' className={({ isActive }) => isActive ? "navActive" : ""}>
                         <img src={home} />
                     </a>
                 </div>

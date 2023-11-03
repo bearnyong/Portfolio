@@ -14,17 +14,17 @@ import YthinkPage from './pages/project/YthinkPage';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         {/* <ScrollToTop /> */}
         <Routes>
-          <Route path='/Portfolio' element={<MainPage />} />
-          <Route path='/Portfolio/minyoung' element={<MainLayout />}>
+          <Route path='/' element={<MainPage />} />
+          <Route path='/minyoung' element={<MainLayout />}>
             <Route index element={<DetailPage />} />
           </Route>
-          <Route path='/Portfolio/project' element={<ProjectLayout />}>
-            <Route path='/Portfolio/project/toegeungil' element={<ToegeungilPage />} />
-            <Route path='/Portfolio/project/algore' element={<AlgorePage />} />
-            <Route path='/Portfolio/project/ythink' element={<YthinkPage />} />
+          <Route path='/project' element={<ProjectLayout />}>
+            <Route path='/project/toegeungil' element={<ToegeungilPage />} />
+            <Route path='/project/algore' element={<AlgorePage />} />
+            <Route path='/project/ythink' element={<YthinkPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

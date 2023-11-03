@@ -47,7 +47,7 @@ function Project() {
                                     <div>#RestAPI</div>
                                     <div>#React</div>
                                 </div>
-                                <NavLink to='/project/toegeungil' target="_blank">
+                                <NavLink to='/Portfolio/project/toegeungil' target="_blank">
                                     <div className='project-view'>
                                         View More →
                                     </div>
@@ -66,7 +66,7 @@ function Project() {
                                     <div>#공공데이터</div>
                                     <div>#Thymeleaf</div>
                                 </div>
-                                <NavLink to='/project/algore' target="_blank">
+                                <NavLink to='/Portfolio/project/algore' target="_blank">
                                     <div className='project-view'>
                                         View More →
                                     </div>
@@ -85,7 +85,7 @@ function Project() {
                                     <div>#PHP</div>
                                     <div>#HTML</div>
                                 </div>
-                                <NavLink to='/project/ythink' target="_blank">
+                                <NavLink to='/Portfolio/project/ythink' target="_blank">
                                     <div className='project-view'>
                                         View More →
                                     </div>

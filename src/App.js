@@ -17,14 +17,14 @@ function App() {
       <BrowserRouter>
         {/* <ScrollToTop /> */}
         <Routes>
-          <Route path='/' element={<MainPage />} />
-          <Route path='minyoung' element={<MainLayout />}>
+          <Route path='/Portfolio' element={<MainPage />} />
+          <Route path='/Portfolio/minyoung' element={<MainLayout />}>
             <Route index element={<DetailPage />} />
           </Route>
-          <Route path='project' element={<ProjectLayout />}>
-            <Route path='toegeungil' element={<ToegeungilPage />} />
-            <Route path='algore' element={<AlgorePage />} />
-            <Route path='ythink' element={<YthinkPage />} />
+          <Route path='/Portfolio/project' element={<ProjectLayout />}>
+            <Route path='/Portfolio/project/toegeungil' element={<ToegeungilPage />} />
+            <Route path='/Portfolio/project/algore' element={<AlgorePage />} />
+            <Route path='/Portfolio/project/ythink' element={<YthinkPage />} />
           </Route>
         </Routes>
       </BrowserRouter>

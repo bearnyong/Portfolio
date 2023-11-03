@@ -9,7 +9,28 @@ import algoreERD from '../../images/project/algore/algoreERD.png'
 import algoreConfigu from '../../images/project/algore/algoreConfiguration.png'
 import algoreGit from '../../images/project/algore/algoreGit.png'
 
-import { pdfjs } from 'react-pdf';
+// back skill
+import java from "../../images/skill/back/back-java.png"
+import security from "../../images/skill/back/back-security.png"
+import spring from "../../images/skill/back/back-spring.png"
+import mybatis from "../../images/skill/back/back-mybatis.png"
+import thymeleaf from "../../images/skill/back/back-thymeleaf.png"
+
+// databace
+import oracle from "../../images/skill/databace/data-oracle.png"
+
+// front skill
+import css from "../../images/skill/front/front-css.png"
+import html from "../../images/skill/front/front-html.png"
+import js from "../../images/skill/front/front-js.png"
+
+//dev tool
+import intellij from "../../images/skill/devtool/dev-intellij.png"
+
+//collabo tool
+import figma from "../../images/skill/collabo/col-figma.png"
+import github from "../../images/skill/collabo/col-github.png"
+import notion from "../../images/skill/collabo/col-notion.png"
 
 function Algore() {
 
@@ -72,35 +93,49 @@ function Algore() {
                     <hr />
                     <div class="common_wrap">
                         <h1 className="line_after2">Project<br />Skill</h1>
-                        <div class="overview_txt">
+                        <div class="overview_txt skill-images">
                             <ul class="overview_txt_ul" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
-                                <li class="dot">사용 기술
-                                    <div className="project-skill">Java</div>
+                                <li class="dot">기술 스택 및 개발 환경
+                                    <p><strong>[ Back-End ]</strong></p>
                                     <p>
-                                        &nbsp;&nbsp;- Spring Framwork의 security, thymeleaf, web을 build하여 <br />
-                                        &nbsp;&nbsp;- Thymeleaf<br />
-                                        &nbsp;&nbsp;- MyBatis mapper .xml 파일을 활용하여 <br />
+                                        <img src={java} />
+                                        <img src={spring} />
+                                        <img src={security} />
+                                        <img src={thymeleaf} />
+                                        <img src={mybatis} />
                                     </p>
-                                    <div className="project-skill">Oracle</div>
+                                    <br />
+                                    <p><strong>[ DataBase ]</strong></p>
                                     <p>
-                                        &nbsp;&nbsp;- Oracle Databace를 활용하여 <br />
+                                        <img src={oracle} />
                                     </p>
-                                    <div className="project-skill">JavaScript</div>
+                                    <p><strong>[ Front-End ]</strong></p>
                                     <p>
-                                        &nbsp;&nbsp;- JavaScript<br />
-                                        &nbsp;&nbsp;- Html<br />
-                                        &nbsp;&nbsp;- CSS<br />
+                                        <img src={js} />
+                                        <img src={html} />
+                                        <img src={css} />
                                     </p>
-                                    <div className="project-skill">Tool</div>
+                                    <p><strong>[ Dev-Tool ]</strong></p>
                                     <p>
-                                        &nbsp;&nbsp;- IntelliJ<br />
-                                        &nbsp;&nbsp;- VScode<br />
+                                        <img src={intellij} />
                                     </p>
-                                    <div className="project-skill">collabo</div>
+                                    <p><strong>[ Collabo-Tool ]</strong></p>
                                     <p>
-                                        <br />
-                                        &nbsp;&nbsp;- Github<br />
-                                        &nbsp;&nbsp;- Figma<br />
+                                        <img src={figma} />
+                                        <img src={github} />
+                                        <img src={notion} />
+                                    </p>
+                                    <p>
+                                        - Spring Security<br />
+                                        사용자 정보를 Session 형태로 세션 저장소에 저장하는 Session 방식을 사용하였습니다.
+                                    </p>
+                                    <p>
+                                        - MyBatis<br />
+                                        SQL 쿼리를 직접 작성 후 XML 방식으로 데이터 매핑하여 SQL을 별도의 파일로 분리하여 관리하였습니다.
+                                    </p>
+                                    <p>
+                                        - Thymeleaf<br />
+                                        Thymeleaf를 활용하여 프로젝트를 진행하며 컨트롤러가 전달하는 데이터를 이용하여 동적으로 화면을 구성해주었습니다.
                                     </p>
                                 </li>
                             </ul>
@@ -187,16 +222,7 @@ function Algore() {
                                         메인 이미지와 동영상 링크를 성공적으로 조회 가능하도록 하였습니다.
                                     </p>
                                 </li>
-                                <li>2. JavaScript node(퇴근길은 이미지 서버)
-                                    <p>
-                                        손질법과 보관법 게시글 작성 시,
-                                        JavaScript를 활용하여 해당 과정의 순서를 추가하거나 삭제하는
-                                    </p>
-                                    <p>
-
-                                    </p>
-                                </li>
-                                <li>3. 손질법- 손질 순서 부분의 다중 INSERT 이슈
+                                <li>2. 손질법- 손질 순서 부분의 다중 INSERT 이슈
                                     <p>
                                         손질법의 손질 순서를 차례로 작성하기 위해
                                         PK값인 손질번호를 참조한 채로 다중 INSERT를 작성해주어야 했지만
@@ -222,34 +248,35 @@ function Algore() {
                             <ul class="overview_txt_ul" data-aos="fade-up" data-aos-delay="30" data-aos-duration="1500">
                                 <li class="dot">잘한 점
                                     <p>
-                                        반응형 웹사이트를 만들어 보는 것은 처음이라 걱정 반 기대 반인 마음으로 프로젝트를 진행하였습니다.<br /> 모바일, 태블릿, 데스크탑 세 가지 유형을 모두 고려해야 했기 때문에
-                                        디자인부터 퍼블리싱까지 여러 시행착오가 있었습니다.
+                                        youtube 링크 데이터의 공통 요소를 활용하여 코드의 중복을 제거하였습니다.
+                                    </p>
+                                    <p>
+                                        팀 규칙과 체크 리스트를 만들어 서로의 진행 상황을 공유하고 소통하였습니다.
                                     </p>
                                 </li>
-                                <li class="dot">부족한 점
+                                <li class="dot">아쉬운 점
                                     <p>
-                                        반응형 웹사이트를 만들어 보는 것은 처음이라 걱정 반 기대 반인 마음으로 프로젝트를 진행하였습니다.<br /> 모바일, 태블릿, 데스크탑 세 가지 유형을 모두 고려해야 했기 때문에
-                                        디자인부터 퍼블리싱까지 여러 시행착오가 있었습니다.
-                                    </p>
-                                </li>
-                                <li class="dot">배운 점
-                                    <p>
-                                        반응형 웹사이트를 만들어 보는 것은 처음이라 걱정 반 기대 반인 마음으로 프로젝트를 진행하였습니다.<br /> 모바일, 태블릿, 데스크탑 세 가지 유형을 모두 고려해야 했기 때문에
-                                        디자인부터 퍼블리싱까지 여러 시행착오가 있었습니다.
+                                        데이터베이스를 각각의 로컬 환경에서 구성하였기 때문에 DB의 변경사항이나 데이터를 각자 관리해야 한다는 점에서 아쉬움이 생겼으며, 이를 통해
+                                        공통 환경에서의 기획과 소통이 중요하다는 것을 느낄 수 있었습니다.
                                     </p>
                                 </li>
                                 <li class="dot">프로젝트 완료 리뷰
-                                    <p> 반응형 웹사이트를 만들어 보는 것은 처음이라 걱정 반 기대 반인 마음으로 프로젝트를 진행하였습니다.<br /> 모바일, 태블릿, 데스크탑 세 가지 유형을 모두 고려해야 했기 때문에
-                                        디자인부터 퍼블리싱까지 여러 시행착오가 있었습니다. </p>
-                                    <p> springframework.web.servlet.ModelAndView모바일 우선 반응형 웹사이트를 만들었기 때문에 모바일, 태블릿, 데스크탑 순으로 퍼블리싱을 진행하였는데, 각 디바이스 별로 코드를 수정하게 되면 다른 디바이스의 레이아웃이 영향을 받는
-                                        경우가
-                                        많았습니다. 이러한 문제들을 고려해서 코드를 짜고 수정하는 것이 가장 힘들었던 부분이였던 것 같습니다.</p>
-                                    <p> 그럼에도 불구하고 반응형 웹 사이트를 제작하는 것은 저에게 굉장히 흥미로운 일이였습니다. 하나의 html 구조를 기반으로 각 디바이스에 맞는 css 코드를 작성하는 게 굉장히
-                                        매력적으로
-                                        다가왔으며 코드를
-                                        짜면서 생기는 여러 문제들을 해결하며 큰 즐거움을 느꼈습니다.
+                                    <p>
+                                        프로젝트를 시작하기 전에는 평소 팀원분들과의 소통이 잘 되어 왔다고 생각했기 때문에 프로젝트가 원활하게 진행될 것이라는 기대가 있었습니다.
+                                        하지만 프로젝트가 진행될수록 프로젝트의 기획부터 프로그램 작성까지 서로의 의사소통을 통해 맞춰 나가는 과정이 정말 중요하다는 생각이 들었습니다.
+                                        답이 명확하게 정해져 있는 것이 아니고 서로가 생각을 맞춰 나가며 결과물을 도출해야 했기 때문에 생각해야 할 부분이 굉장히 많았습니다.
                                     </p>
-                                    <p> 앞으로도 기회가 된다면 지금까지 제작한 다른 웹사이트들도 반응형으로 제작할 계획입니다. 이번 경험을 통해 더 많은 것을 배우고 발전해나갈 수 있기를 바라며 글을 마치겠습니다 :)
+                                    <p>
+                                        특히, 프로젝트를 진행하면서 데이터 베이스의 컬럼들을 여러 번 수정해야 할 때가 가장 난감했습니다.
+                                        각자의 로컬 환경에서 직접 데이터를 입력하며 화면을 구성하는 과정 속에서 데이터 베이스의 컬럼 수정 하나로 팀원 전체가 같은 작업을 반복해야 했기 때문에
+                                        공통 환경에서의 소통이 중요하다는 점을 가장 크게 기억에 남는 것 같습니다. 그래도 수정 사항이 있을 때마다 바로 공유하고 소통했기에 큰 일 없이 잘 마무리 되었다고 생각합니다.
+                                    </p>
+                                    <p>
+                                        또한 깃허브를 함께 공유하며 협업 기능을 사용하게 되면서 같은 파일을 여러 명이 수정했을 때 발생 하는 충돌 문제를 겪고 소통하면서
+                                        충돌을 해결하는 방법과 효율적으로 파일 정리를 어떻게 해야 하는지 등 여러 부분을 배울 수 있어서 좋았습니다.
+                                    </p>
+                                    <p>
+                                        결론적으로 이번 프로젝트를 통해 가장 인상 깊었던 점은 팀 프로젝트는에 있어서 가장 중요한 점은 의사소통이 되어야 한다는 사실을 깨닫게 되었습니다.
                                     </p>
                                 </li>
                             </ul>
@@ -278,7 +305,7 @@ function Algore() {
                         </li>
                         <li><a href="https://github.com/bearnyong/algore" target="_blank">View github</a></li>
                         <li>
-                            <NavLink to="/project/ythink">
+                            <NavLink to="/project/toegeungil" target="_blank">
                                 Next project
                             </NavLink>
                             <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48">

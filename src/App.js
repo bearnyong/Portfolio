@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <ScrollToTop />
+        {/* <ScrollToTop /> */}
         <Routes>
           <Route path='/' element={<MainPage />} />
           <Route path='minyoung' element={<MainLayout />}>

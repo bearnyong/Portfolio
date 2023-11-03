@@ -76,7 +76,7 @@ function Project() {
                                 <img src={algore} />
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide>
+                        {/* <SwiperSlide>
                             <div className='project-no'>
                                 <div className='project-sec1'>03.</div>
                                 <div className='project-sec2'>YThink</div>
@@ -94,7 +94,7 @@ function Project() {
                             <div className='project-img'>
                                 <img src={ythink} />
                             </div>
-                        </SwiperSlide>
+                        </SwiperSlide> */}
                     </Swiper>
                 </div>
             </section>

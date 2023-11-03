@@ -282,8 +282,9 @@
     width: 100%;
 }
 
-
-
+.skill-images img {
+    width: 5vw;
+}
 
 /****** footer  ******/
 .footer_ul {

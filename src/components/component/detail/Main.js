@@ -24,7 +24,7 @@ function Main() {
                             </span>
                         </div>
                         <div class="web">
-                            <p>Web Developers</p>
+                            <p>Developers</p>
                         </div>
                     </div>
                     <div className="main-marT2">Ko, Min-young!</div>

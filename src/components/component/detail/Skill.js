@@ -23,7 +23,7 @@ function Skill() {
                             </li>
                             <li className='skill-flex'>
                                 <div>
-                                    <h4>Databace</h4>
+                                    <h4>Database</h4>
                                     <h5>Oracle, MySQL, (JAVA- JDBC, MyBatis)</h5>
                                 </div>
                                 <span class="hover-text">

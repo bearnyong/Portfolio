@@ -16,8 +16,8 @@ import spring from "../../images/skill/back/back-spring.png"
 import mybatis from "../../images/skill/back/back-mybatis.png"
 import thymeleaf from "../../images/skill/back/back-thymeleaf.png"
 
-// databace
-import oracle from "../../images/skill/databace/data-oracle.png"
+// database
+import oracle from "../../images/skill/database/data-oracle.png"
 
 // front skill
 import css from "../../images/skill/front/front-css.png"

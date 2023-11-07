@@ -71,7 +71,45 @@ body::-webkit-scrollbar-track {
 
 /* 모바일 세로 (해상도 ~ 479px)*/
 @media all and (max-width:479px) {
+    /* 메인 */
     body {
         /* background-color: #9b92cf; */
+    }
+    header {
+        font-size: 7vw;
+    }
+    .middle {
+        display: block;
+    }
+    .roller{
+        position: relative;
+        left: 24%;
+        font-size: 5vw;
+        width: 50%;
+    }
+    .main-board div {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    .bearimg {
+        margin-top: 6vw;
+        width: 15vw;
+    }
+    .click-me {
+        font-size: 4vw;
+    }
+
+    /* profile */
+    .aside {
+        height: 28vw;
+        top: 1%;
+    }
+    .aside div img {
+        display: none;
+    }
+
+    /* 네브바 */
+    .nav-top {
+        display: none;
     }
 }

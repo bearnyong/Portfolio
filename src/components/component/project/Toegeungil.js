@@ -16,8 +16,8 @@ import node from "../../images/skill/back/back-node.png"
 import security from "../../images/skill/back/back-security.png"
 import spring from "../../images/skill/back/back-spring.png"
 
-// databace
-import mysql from "../../images/skill/databace/back-mysql.png"
+// database
+import mysql from "../../images/skill/database/back-mysql.png"
 
 // front skill
 import css from "../../images/skill/front/front-css.png"

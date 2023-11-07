@@ -10,7 +10,7 @@ function Profile() {
 
     return (
         <>
-            <aside>
+            <aside className="aside">
                 <object>
                     <img class="profile-img" src={profile} />
                     <h3>고민영</h3>

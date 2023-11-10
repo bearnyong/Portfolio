@@ -11,7 +11,7 @@ header {
 /* 곰돌이 */
 .bearimg {
     margin-top: 2vw;
-    margin-bottom: 1vw;
+    /* margin-bottom: 1vw; */
     width: 9vw;
     /* position: relative;
     bottom: -80px; */
@@ -120,9 +120,9 @@ header {
 }
 
 .main-marT2 {
-    margin-top: 2.5vw;
+    margin-top: 3vw;
 }
 
 .main-marB2 {
-    margin-bottom: 2.5vw;
+    margin-bottom: 3vw;
 }

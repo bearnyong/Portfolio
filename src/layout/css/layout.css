@@ -101,15 +101,27 @@ body::-webkit-scrollbar-track {
 
     /* profile */
     .aside {
-        height: 28vw;
-        top: 1%;
+        display: none;
     }
     .aside div img {
         display: none;
     }
 
     /* 네브바 */
-    .nav-top {
+    nav .nav-top {
         display: none;
+    }
+
+    /* home */
+    nav .nav-bottom {
+        display: none;
+    }
+
+    section {
+        padding: 3%;
+    }
+    
+    section .about-board {
+        top: 20%;
     }
 }

@@ -9,6 +9,12 @@
     font-family: 'GowunDodum';
 }
 
+@media all and (max-width:479px) {
+    .about-section {
+        height: calc(50vh - 10vw);
+    }
+}
+
 .about-board {
     vertical-align: middle;
     position: relative;

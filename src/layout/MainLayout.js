@@ -6,15 +6,17 @@ import Homebar from "./components/Homebar";
 
 import "./css/layout.css"
 
-function MainLayout() {
+function MainLayout({scrollRef}) {
 
     return (
         <>
             <div className="container">
-                <Profile/>
-                <Navbar />
-                <Homebar/>
-                <Outlet/>
+                <div id="content">
+                    <Profile />
+                    <Navbar scrollRef={scrollRef}/>
+                    <Homebar />
+                </div>
+                <Outlet />
             </div>
         </>
     )
